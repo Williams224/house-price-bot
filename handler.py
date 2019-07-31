@@ -31,7 +31,7 @@ def hello(event, context):
             for el in soup.findAll("p"):
                 if "pdp-estimate__price ui-text-t3" in str(el) and "pcm" not in el.text:
                     price = el.text
-                    
+
             response = "Current estimated price = {}".format(price)
 
         else:
